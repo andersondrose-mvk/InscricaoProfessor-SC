@@ -77,47 +77,42 @@ input {
 }
 
 /* --- CORES DO MODO ESCURO --- */
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-body.dark-mode fieldset {
-  background-color: #1e1e1e;
-  border-color: #444;
-}
-
-body.dark-mode .menu-css {
-  background-color: #008b8b; /* Um tom de aqua mais escuro */
-  border-color: #ffffff;
-}
-
-body.dark-mode legend {
-  background-color: #333;
-}
-
-body.dark-mode input,
-body.dark-mode textarea,
-body.dark-mode select {
-  background-color: #333;
-  color: white;
-  border: 1px solid #555;
-}
-/* Isso precisa estar no seu arquivo CSS para as cores mudarem */
-body.dark-mode {
+/* --- CORES DO MODO ESCURO (Consolidado e Forte) --- */
+html body.dark-mode {
   background-color: #121212 !important;
-  color: white !important;
+  color: #ffffff !important;
 }
 
-body.dark-mode .menu-css {
-  background-color: #008b8b;
-  border-color: white;
+html body.dark-mode fieldset {
+  background-color: #1e1e1e !important;
+  border-color: #444 !important;
 }
 
-/* Garante que o texto dos labels e títulos fique branco no modo escuro */
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode label,
-body.dark-mode strong {
-  color: white;
+html body.dark-mode .menu-css {
+  background-color: #008b8b !important;
+  border-color: #ffffff !important;
+}
+
+html body.dark-mode legend {
+  background-color: #333 !important;
+}
+
+html body.dark-mode input,
+html body.dark-mode textarea,
+html body.dark-mode select {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #555 !important;
+}
+
+/* Garante que o texto dos labels, links e títulos fique branco */
+html body.dark-mode h1,
+html body.dark-mode h2,
+html body.dark-mode label,
+html body.dark-mode strong,
+html body.dark-mode a {
+  color: #ffffff !important;
 }
